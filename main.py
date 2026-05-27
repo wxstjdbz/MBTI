@@ -46,6 +46,17 @@ st.markdown(
         margin-bottom: 24px;
     }
 
+    .personality-line {
+        background-color: #fff0f6;
+        color: #555;
+        padding: 13px 16px;
+        border-radius: 16px;
+        border: 1px solid #ffd6e5;
+        font-size: 15.5px;
+        line-height: 1.6;
+        margin-top: 14px;
+    }
+
     .mbti-badge {
         display: inline-block;
         background: linear-gradient(135deg, #ff8fab, #ffc2d1);
@@ -134,6 +145,7 @@ st.markdown(
 outfits = {
     "ISTJ": {
         "emoji": "📚",
+        "personality": "책임감이 강하고 계획적이며, 안정적이고 실용적인 선택을 좋아하는 타입이에요.",
         "mood": "단정하고 믿음직한 클래식 무드",
         "tags": ["깔끔함", "클래식", "실용적"],
         "male": {
@@ -151,6 +163,7 @@ outfits = {
     },
     "ISFJ": {
         "emoji": "🧸",
+        "personality": "다정하고 배려심이 깊으며, 주변 사람을 편안하게 해주는 따뜻한 타입이에요.",
         "mood": "따뜻하고 부드러운 포근 무드",
         "tags": ["포근함", "러블리", "차분함"],
         "male": {
@@ -168,6 +181,7 @@ outfits = {
     },
     "INFJ": {
         "emoji": "🌙",
+        "personality": "깊이 있는 생각과 섬세한 감성을 가진, 조용하지만 신념이 뚜렷한 타입이에요.",
         "mood": "신비롭고 감성적인 무드",
         "tags": ["감성적", "몽환적", "우아함"],
         "male": {
@@ -185,6 +199,7 @@ outfits = {
     },
     "INTJ": {
         "emoji": "🖤",
+        "personality": "분석적이고 독립적이며, 목표를 향해 체계적으로 움직이는 전략가 타입이에요.",
         "mood": "지적이고 세련된 시크 무드",
         "tags": ["시크함", "미니멀", "도시적"],
         "male": {
@@ -202,6 +217,7 @@ outfits = {
     },
     "ISTP": {
         "emoji": "🛹",
+        "personality": "쿨하고 현실적이며, 직접 경험하면서 문제를 해결하는 자유로운 타입이에요.",
         "mood": "쿨하고 자유로운 스트릿 무드",
         "tags": ["쿨함", "실용적", "스트릿"],
         "male": {
@@ -219,6 +235,7 @@ outfits = {
     },
     "ISFP": {
         "emoji": "🎨",
+        "personality": "감각적이고 유연하며, 자신만의 취향과 분위기를 자연스럽게 표현하는 타입이에요.",
         "mood": "감각적이고 자연스러운 아트 무드",
         "tags": ["감각적", "내추럴", "개성"],
         "male": {
@@ -236,6 +253,7 @@ outfits = {
     },
     "INFP": {
         "emoji": "☁️",
+        "personality": "상상력이 풍부하고 감성적이며, 자신만의 가치와 이야기를 중요하게 여기는 타입이에요.",
         "mood": "몽글몽글 감성적인 로맨틱 무드",
         "tags": ["감성", "로맨틱", "빈티지"],
         "male": {
@@ -253,6 +271,7 @@ outfits = {
     },
     "INTP": {
         "emoji": "💻",
+        "personality": "호기심이 많고 논리적이며, 자신만의 방식으로 깊게 탐구하는 타입이에요.",
         "mood": "편안하고 지적인 너드 시크 무드",
         "tags": ["편안함", "너드미", "미니멀"],
         "male": {
@@ -270,6 +289,7 @@ outfits = {
     },
     "ESTP": {
         "emoji": "⚡",
+        "personality": "활동적이고 에너지가 넘치며, 순간을 즐기고 도전하는 것을 좋아하는 타입이에요.",
         "mood": "에너지 넘치는 스포티 무드",
         "tags": ["활동적", "화려함", "스포티"],
         "male": {
@@ -287,6 +307,7 @@ outfits = {
     },
     "ESFP": {
         "emoji": "🎉",
+        "personality": "밝고 사교적이며, 분위기를 즐겁게 만들고 트렌디한 감각이 뛰어난 타입이에요.",
         "mood": "화사하고 사랑스러운 파티 무드",
         "tags": ["화려함", "러블리", "트렌디"],
         "male": {
@@ -304,6 +325,7 @@ outfits = {
     },
     "ENFP": {
         "emoji": "🌈",
+        "personality": "상상력과 에너지가 풍부하며, 새로운 가능성과 개성 있는 표현을 좋아하는 타입이에요.",
         "mood": "톡톡 튀는 자유로운 컬러풀 무드",
         "tags": ["자유로움", "컬러풀", "개성"],
         "male": {
@@ -321,6 +343,7 @@ outfits = {
     },
     "ENTP": {
         "emoji": "🧩",
+        "personality": "재치 있고 아이디어가 많으며, 새로운 시도와 독특한 조합을 즐기는 타입이에요.",
         "mood": "재치 있고 힙한 믹스매치 무드",
         "tags": ["힙함", "실험적", "유니크"],
         "male": {
@@ -338,6 +361,7 @@ outfits = {
     },
     "ESTJ": {
         "emoji": "👔",
+        "personality": "현실적이고 추진력이 있으며, 목표를 정하면 빠르고 체계적으로 실행하는 타입이에요.",
         "mood": "당당하고 정돈된 리더 무드",
         "tags": ["단정함", "포멀", "당당함"],
         "male": {
@@ -355,6 +379,7 @@ outfits = {
     },
     "ESFJ": {
         "emoji": "🌷",
+        "personality": "친화력이 좋고 배려심이 많으며, 주변 분위기를 따뜻하게 만드는 타입이에요.",
         "mood": "밝고 호감 가는 단정 러블리 무드",
         "tags": ["호감형", "단정함", "러블리"],
         "male": {
@@ -372,6 +397,7 @@ outfits = {
     },
     "ENFJ": {
         "emoji": "✨",
+        "personality": "따뜻한 리더십과 공감 능력이 뛰어나며, 사람들에게 좋은 영향을 주는 타입이에요.",
         "mood": "따뜻하고 세련된 주인공 무드",
         "tags": ["세련됨", "따뜻함", "우아함"],
         "male": {
@@ -389,6 +415,7 @@ outfits = {
     },
     "ENTJ": {
         "emoji": "🦁",
+        "personality": "목표 지향적이고 카리스마가 있으며, 큰 그림을 보고 과감하게 이끄는 타입이에요.",
         "mood": "카리스마 있고 고급스러운 파워 무드",
         "tags": ["카리스마", "럭셔리", "시크"],
         "male": {
@@ -416,21 +443,18 @@ def make_pinterest_url(query):
 def render_outfit_card(gender_label, outfit_data):
     pinterest_url = make_pinterest_url(outfit_data["query"])
 
+    items_html = ""
+    for item in outfit_data["items"]:
+        items_html += f"• {item}<br>"
+
     st.markdown(
         f"""
         <div class="card">
             <div class="card-title">{gender_label} 코디 추천</div>
             <div class="outfit-name">✨ {outfit_data["title"]}</div>
             <div class="item-list">
-        """,
-        unsafe_allow_html=True
-    )
-
-    for item in outfit_data["items"]:
-        st.markdown(f"- {item}")
-
-    st.markdown(
-        f"""
+                {items_html}
+            </div>
             <div class="tip-box">
                 <b>💡 스타일 팁</b><br>
                 {outfit_data["tip"]}
@@ -462,7 +486,7 @@ st.markdown(
 )
 
 # =========================================================
-# 선택 영역
+# MBTI 선택 영역
 # =========================================================
 st.markdown('<div class="cute-box">', unsafe_allow_html=True)
 
@@ -474,13 +498,23 @@ selected_mbti = st.selectbox(
     index=0
 )
 
+selected_data = outfits[selected_mbti]
+
+# 선택창 밑 MBTI 성격 설명 1줄
+st.markdown(
+    f"""
+    <div class="personality-line">
+        {selected_data["emoji"]} <b>{selected_mbti}</b>는 {selected_data["personality"]}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown('</div>', unsafe_allow_html=True)
 
 # =========================================================
 # 선택 결과
 # =========================================================
-selected_data = outfits[selected_mbti]
-
 st.markdown('<div class="cute-box">', unsafe_allow_html=True)
 
 st.markdown(
